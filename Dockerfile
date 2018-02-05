@@ -6,7 +6,7 @@ ENV KOPS_VERSION=1.8.0
 
 ENV TERM xterm
 RUN apt-get update \
- 	&& DEBIAN_FRONTEND=noninteractive apt-get install -y -q curl python-pip  \
+ 	&& DEBIAN_FRONTEND=noninteractive apt-get install -y -q git curl python-pip  \
 	&& curl -LO https://storage.googleapis.com/kubernetes-release/release/v$KUBECTL_VERSION/bin/linux/amd64/kubectl \
 	&& mv kubectl /usr/bin/ \
 	&& chmod +x /usr/bin/kubectl \
