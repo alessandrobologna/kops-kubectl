@@ -17,5 +17,7 @@ RUN apt-get update \
 	&& curl -sSL https://get.docker.com/ | sh\
     && apt-get clean && apt-get purge -y -q --auto-remove curl && rm -rf /var/lib/apt/lists/* 
 
+ADD docker-entrypoint /
+RUN chmod +x /docker-entrypoint
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/docker-entrypoint"]
