@@ -1,2 +1,2 @@
 # kops-kubetcl
-A docker image to use kops, kubetcl and more stuff
+A docker image to use kops, kubectl and more stuff
