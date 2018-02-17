@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM alessandrob/aws-codebuild-git
 
 ENV KUBECTL_VERSION=1.9.2
 ENV KOPS_VERSION=1.8.0
