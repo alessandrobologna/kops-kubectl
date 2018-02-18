@@ -1,3 +1,5 @@
+![build-status](https://img.shields.io/docker/build/alessandrob/kops-kubectl.svg)
+![build-automated](https://img.shields.io/docker/automated/alessandrob/kops-kubectl.svg)
 # kops-kubectl
 A docker image to use kops, kubectl and more stuff
 
